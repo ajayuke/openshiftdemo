@@ -1,43 +1,25 @@
-# PrimeFaces Showcase
+Maven - Spring 3 MVC Hello World
+===============================
+Template for Spring 3 MVC + JSP view + XML configuration, using Maven build tool.
 
-![PrimeFaces icon](http://blog.primefaces.org/wp-content/uploads/2011/08/bloglogo.png)
+###1. Technologies used
+* Maven 3
+* Spring 3.2.13.RELEASE
+* JSTL 1.2
+* Logback 1.1.3
+* Boostrap 3
 
-### Getting Started
-
-Deployable version of **PrimeFaces Showcase** war file can be downloaded manually or build it from sources.  
-
-##### Prebuilt war
-
-For a full list of the available downloads, please visit the [download page](http://www.primefaces.org/downloads). Scroll down to showcase for war file link.
-
-##### Build from sources
-
+###2. To Run this project locally
+```shell
+$ git clone https://github.com/mkyong/spring3-mvc-maven-xml-hello-world
+$ mvn jetty:run
 ```
-git clone https://github.com/primefaces/showcase.git
-cd showcase
-mvn clean                  -- clean temp files from target folder
-mvn package                -- create war file (under target directory)
-mvn jetty:run              -- run showcase project locally
-```
+Access ```http://localhost:8080/spring3```
 
-##### Run from local sources
+###3. To import this project into Eclipse IDE
+1. ```$ mvn eclipse:eclipse```
+2. Import into Eclipse via **existing projects into workspace** option.
+3. Done.
 
-```
-mvn clean jetty:run  
-```
-
-[http://localhost:8080/showcase/](http://localhost:8080/showcase)
-
-[http://localhost:8080/showcase/mobile/index.xhtml](http://localhost:8080/showcase/mobile/index.xhtml)
-
-### Documentation
-
-User Guide is available at [documentation](http://www.primefaces.org/documentation) page along with other additional resoures.
-
-### Contribution
-
-Visit [Contribution Wiki](https://github.com/primefaces/primefaces/wiki/Contributing-to-Primefaces) page for the detailed information.
-
-### License
-
-Licensed under the Apache License, Version 2.0 (the "License") [http://www.apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
+###4. Project Demo
+Please refer to this article [Maven - Spring 3 MVC Hello World ](http://www.mkyong.com/spring3/spring-3-mvc-hello-world-example/)
