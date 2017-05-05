@@ -1,9 +1,9 @@
-pipeline {
-    agent any
+node {
+    'java-build'
     stages {
         stage('Build') {
             steps {
-                sh 'echo "Hello World"'
+                checkout scm
                 sh '''
                     echo "Multiline shell steps works too"
                     ls -lah
